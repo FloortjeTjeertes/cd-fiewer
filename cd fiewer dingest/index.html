@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>CD covers</title>
+  <meta name="author" content="Florian Tjeertes">
+</head>
+
+<body lang="nl">
+  <div class="wrapper">
+    <!-- begin  album -->
+    <div class="cover">
+      <img src="cdcovers/Final_Fantasy_VII_Box_Art.jpg" alt="ff7">
+      <article>
+        <h3>final fantasy 7</h3>
+        <h3>Developer(s)</h3>
+        <ul>
+          <li> Square</li>
+        </ul>
+        <h3>Publisher(s)</h3>
+        <ul>
+          <li>PlayStation</li>
+          <li>JP: Square</li>
+          <li>WW: Sony Computer Entertainment</li>
+          <li>Windows</li>
+          <li>Eidos Interactive</li>
+        </ul>
+        <h3>Director(s)</h3>
+        <ul>
+          <li>Yoshinori Kitase</li>
+          <li>Producer(s)</li>
+          <li>Hironobu Sakaguchi</li>
+        </ul>
+      </article>
+    </div>
+    <!-- einde  album -->
+    <!-- begin  album -->
+    <div class="cover">
+      <img src="cdcovers/crash.jpg" alt="crash">
+      <article>
+        <h3>crash bandicoot</h3>
+        <h3>Developer(s)</h3>
+        <ul>
+          <li> Naughty Dog</li>
+        </ul>
+        <h3>Publisher(s)</h3>
+        <ul>
+          <li>Sony Computer Entertainment</li>
+        </ul>
+        <h3>Director(s)</h3>
+        <ul>
+          <li> Jason Rubin</li>
+        </ul>
+        <h3>Producer(s)</h3>
+        <ul>
+          <li>David Siller</li>
+        </ul>
+        <h3>Designer(s)</h3>
+        <ul>
+          <li>David Siller</li>
+        </ul>
+      </article>
+    </div>
+    <!-- einde  album -->
+    <!-- begin  album -->
+    <div class="cover">
+      <img src="cdcovers/spyro.jpg" alt="spyro">
+      <article>
+        <h3></h3>
+      </article>
+    </div>
+    <!-- einde  album -->
+    <!-- begin  album -->
+    <div class="cover">
+      <img src="cdcovers/castelvania.jpg" alt="castelvania">
+      <article>
+        <h3></h3>
+      </article>
+    </div>
+    <!-- einde  album -->
+    <!-- begin  album -->
+    <div class="cover">
+      <img src="cdcovers/klanoa.jpg" alt="klanoa">
+      <article>
+        <h3></h3>
+      </article>
+    </div>
+    <!-- einde  album -->
+    <!-- begin  album -->
+    <div class="cover">
+      <img src="cdcovers/bomberman.jpg" alt="bomberman">
+      <article>
+        <h3></h3>
+      </article>
+    </div>
+    <!-- einde  album -->
+  </div>
+  <footer>
+    dit is een footer
+  </footer>
+  <script>
+    let alleAlbums = document.querySelectorAll('.cover');
+    const naarBoven = (e) => {
+      e.target.classList.remove('naarBeneden');
+      e.target.classList.add('naarBoven');
+    }
+    const naarBeneden = (e) => {
+      e.target.classList.remove('naarBoven');
+      e.target.classList.add('naarBeneden');
+    }
+
+
+    for (let i = 0; i < alleAlbums.length; i++) {
+      let album = alleAlbums[i];
+        album.addEventListener('mouseenter', naarBoven);
+      album.addEventListener('mouseleave', naarBeneden);
+    }
+</script>
+
+
+
+
+
+<div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+
+      </div>
+
+
+
+
+
+
+</body>
+
+</html>
